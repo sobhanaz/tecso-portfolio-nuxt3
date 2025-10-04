@@ -1,0 +1,119 @@
+@import "@/assets/styles/variables-site/fonts";
+@import "@/assets/styles/variables-site/colors";
+@import "@/assets/styles/mixins/utilities";
+.dsn-skills-item {
+  position: relative;
+  width: 100%;
+
+  .background-theme {
+    --heading-color: inhert !important;
+    --font-color: inhert !important;
+  }
+
+  .bar-progress {
+    position: relative;
+    width: 100%;
+    height: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $assistant-color;
+      transform: translateY(-50%);
+
+      .background-section & {
+        background-color: $bg-color;
+      }
+    }
+
+    .fill {
+      position: absolute;
+      width: 0;
+      height: 100%;
+
+      &:not(.background-section):not(.background-main):not(
+          .background-theme
+        ):not(.background-heading) {
+        background-image: url("@/assets/images/for-styles/patterns.png");
+      }
+
+      &.background-heading {
+        background-color: $heading-color;
+      }
+
+      .number {
+        position: absolute;
+        top: -10px;
+        right: -15px;
+        font-family: $heading-font;
+        color: $heading-color;
+        text-shadow: 1px 1px 7px var(--bg-color);
+      }
+    }
+  }
+
+  .bar-svg {
+    $progress-bar-stroke-width: 1.8;
+    $progress-bar-size: 160px;
+    text-align: center;
+
+    .fill-bar {
+      width: $progress-bar-size;
+      height: $progress-bar-size;
+      margin: auto;
+      background-color: transparent;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 115px;
+        height: 115px;
+        background-color: $bg-color;
+        opacity: 0.23;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+
+      svg {
+        transform: rotate(-90deg);
+      }
+
+      .progress-bar__background {
+        fill: none;
+        stroke: $bg-color;
+        stroke-width: $progress-bar-stroke-width;
+        opacity: 0.23;
+      }
+
+      .progress-bar__progress {
+        fill: none;
+        stroke-dasharray: 100 100;
+        stroke-linecap: round;
+        stroke-width: $progress-bar-stroke-width;
+        stroke: $theme-color;
+      }
+
+      &.background-section .progress-bar__progress {
+        stroke: $assistant-color;
+      }
+
+      &.background-main .progress-bar__progress {
+        stroke: $bg-color;
+      }
+
+      &.background-heading .progress-bar__progress {
+        stroke: $heading-color;
+      }
+
+      .number.font-number {
+        font-size: 30px;
+      }
+    }
+  }
+}

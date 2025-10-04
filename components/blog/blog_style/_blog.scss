@@ -1,0 +1,60 @@
+/* -------------------------------------------------------
+                   Blog
+-------------------------------------------------------- */
+
+.root-blog {
+  counter-reset: compteListe;
+
+  .blog-item {
+    padding-left: 60px;
+    padding-top: var(--blog-g, 50px);
+    padding-bottom: var(--blog-g, 50px);
+
+    &:last-of-type {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    .blog-item-inner {
+      @include media_991(min) {
+        display: flex;
+      }
+
+      &::before {
+        counter-increment: compteListe 1;
+        color: $heading-color;
+        content: "/ " counter(compteListe);
+        position: absolute;
+        left: -60px;
+        top: 5px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+    }
+
+    .left-box {
+      @include media_991(min) {
+        flex: 0 1 40%;
+      }
+      @include media_991 {
+        margin-bottom: 15px;
+      }
+    }
+
+    .right-box {
+      @include media_991(min) {
+        flex: 0 1 60%;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@include col-layout(post, 30);
+
+

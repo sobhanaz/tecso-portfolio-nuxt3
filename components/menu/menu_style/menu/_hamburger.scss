@@ -1,0 +1,257 @@
+.main-navigation {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-right: var(--dsn-gap-container);
+  padding-left: var(--dsn-gap-container);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  @include media_991() {
+    flex-direction: column;
+    overflow: auto;
+  }
+}
+
+ul.primary-nav {
+  position: relative;
+  top: 100px;
+  @include media_991(min) {
+    width: 70%;
+    padding-right: var(--bs-gutter-x);
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  &,
+  ul {
+    counter-reset: var(--dsn-li-name);
+    height: calc(100vh - 100px);
+    padding-bottom: 80px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    pointer-events: none;
+    font-weight: 500;
+
+    @include media_991() {
+      justify-content: start;
+    }
+
+    li {
+      cursor: pointer;
+      pointer-events: none;
+    }
+
+    a {
+      color: $body-color;
+      transform-origin: left top;
+      transition: 500ms 0ms;
+
+      &:hover {
+        transform: skewX(2deg);
+        letter-spacing: 2.5px;
+      }
+    }
+
+    @include media_991(min) {
+      li a span:before {
+        counter-increment: var(--dsn-li-name);
+        content: counters(var(--dsn-li-name), ".", decimal-leading-zero) ". ";
+        font-family: $border-color;
+        pointer-events: none;
+        font-size: 14px;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  li {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  a {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &.h2 a {
+    line-height: $font-size-h2;
+  }
+
+  .h3 a {
+    line-height: $font-size-h3;
+  }
+}
+
+ul {
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  > li > a > span,
+  > li > span,
+  .scroll-content > li > a > span,
+  .scroll-content > li > span {
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s $easeInOutBack;
+    transition-property: opacity, visibility, transform;
+    transform-origin: center top;
+    transition-delay: calc(0.1s * var(--dsn-li-index));
+  }
+
+  &.open {
+    z-index: 9;
+
+    > li,
+    .scroll-content > li {
+      > a,
+      > span {
+        pointer-events: auto !important;
+      }
+    }
+
+    > li > a > span,
+    > li > span,
+    .scroll-content > li > a > span,
+    .scroll-content > li > span {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+@import "nav_toogle";
+@import "menu-cover-title";
+
+&.dsn-open {
+  .menu-cover-title {
+    transition-delay: 1s;
+    opacity: 0.03;
+    transform: translateY(-50%);
+  }
+
+  .toggle-line {
+    &:nth-of-type(2) {
+      transform: scale(0) !important;
+      display: none;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(3) {
+      margin-top: 0 !important;
+    }
+
+    &:nth-of-type(1) {
+      transform: scale(1) rotate(45deg) !important;
+      transform-origin: bottom !important;
+    }
+
+    &:nth-of-type(3) {
+      transform: scale(1) rotate(-45deg) !important;
+      transform-origin: top !important;
+    }
+  }
+
+  .main-navigation {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    @include media_991() {
+      text-align: center;
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include keyframes(draw) {
+  0% {
+    stroke-dasharray: 10;
+  }
+  0% {
+    stroke-dasharray: 280;
+  }
+  100% {
+    stroke-dasharray: 10;
+  }
+}
+
+.dsn-back {
+  svg {
+    fill: none;
+    stroke: $border-color;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 0;
+    stroke-width: 13px;
+    width: 22px;
+    margin-right: 10px;
+  }
+
+  > span {
+    display: flex;
+    @include media_991() {
+      justify-content: center;
+    }
+  }
+
+  span {
+    font-size: 15px;
+  }
+
+  .text-toggle-back {
+    position: relative;
+
+    .text-back {
+      position: absolute;
+      left: 0;
+    }
+
+    .char {
+      margin-right: 5px;
+      transform-origin: center top;
+      transition: 0.5s $easeInOutBack calc(50ms * var(--char-index));
+    }
+  }
+
+  /**
+      Hover
+   */
+  &:hover svg {
+    animation: draw 3s linear alternate infinite;
+  }
+
+  &:hover .text-toggle-back .text-back,
+  .text-toggle-back .text-name {
+    .char {
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &:hover .text-toggle-back .text-name,
+  .text-toggle-back .text-back {
+    .char {
+      transform: translateY(10px) rotateX(75deg);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+

@@ -1,0 +1,235 @@
+[
+    {
+        "name": "Home",
+        "dropdownMenu": [
+            {
+                "name": "Main Demo",
+                "href": "/main-demo"
+            },
+            {
+                "name": "Business",
+                "href": "/business"
+            },
+            {
+                "name": "Architecture",
+                "href": "/architecture"
+            },
+            {
+                "name": "Personal",
+                "href": "/personal"
+            },
+            {
+                "name": "Photographer",
+                "href": "/photographer"
+            },
+            {
+                "name": "Resume",
+                "href": "/resume"
+            },
+            {
+                "name": "Metro Portfolio 1",
+                "href": "/metro-portfolio-1"
+            },
+            {
+                "name": "Metro Portfolio 2",
+                "href": "/metro-portfolio-2"
+            }
+        ]
+    },
+    {
+        "name": "Portfolio",
+        "dropdownMenu": [
+            {
+                "name": "Carousel",
+                "dropdownMenu": [
+                    {
+                        "name": "Carousel Portfolio 1",
+                        "href": "/carousel/carousel-portfolio-1"
+                    },
+                    {
+                        "name": "Carousel Portfolio 2",
+                        "href": "/carousel/carousel-portfolio-2"
+                    },
+                    {
+                        "name": "Carousel Portfolio 3",
+                        "href": "/carousel/carousel-portfolio-3"
+                    }
+                ]
+            },
+            {
+                "name": "Slider",
+                "dropdownMenu": [
+                    {
+                        "name": "Full Screen",
+                        "dropdownMenu": [
+                            {
+                                "name": "Slider Distortion / H",
+                                "href": "/slider/slider-full-distortion-h"
+                            },
+                            {
+                                "name": "Slider Distortion / V",
+                                "href": "/slider/slider-full-distortion-v"
+                            },
+                            {
+                                "name": "Slider Parallax / H",
+                                "href": "/slider/slider-full-parallax-h"
+                            },
+                            {
+                                "name": "Slider Parallax / V",
+                                "href": "/slider/slider-full-parallax-v"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Padding Screen",
+                        "dropdownMenu": [
+                            {
+                                "name": "Slider Distortion / H",
+                                "href": "/slider/slider-padding-distortion-h"
+                            },
+                            {
+                                "name": "Slider Distortion / V",
+                                "href": "/slider/slider-padding-distortion-v"
+                            },
+                            {
+                                "name": "Slider Parallax / H",
+                                "href": "/slider/slider-padding-parallax-h"
+                            },
+                            {
+                                "name": "Slider Parallax / V",
+                                "href": "/slider/slider-padding-parallax-v"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Half Screen",
+                        "dropdownMenu": [
+                            {
+                                "name": "Slider Distortion / H",
+                                "href": "/slider/slider-half-distortion-h"
+                            },
+                            {
+                                "name": "Slider Distortion / V",
+                                "href": "/slider/slider-half-distortion-v"
+                            },
+                            {
+                                "name": "Slider Parallax / H",
+                                "href": "/slider/slider-half-parallax-h"
+                            },
+                            {
+                                "name": "Slider Parallax / V",
+                                "href": "/slider/slider-half-parallax-v"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Card",
+                "dropdownMenu": [
+                    {
+                        "name": "Work Card 1",
+                        "href": "/work/work-card-1"
+                    },
+                    {
+                        "name": "Work Card 2",
+                        "href": "/work/work-card-2"
+                    }
+                ]
+            },
+            {
+                "name": "Classic",
+                "dropdownMenu": [
+                    {
+                        "name": "Work Classic 1",
+                        "href": "/work/work-classic-1"
+                    },
+                    {
+                        "name": "Work Classic 2",
+                        "href": "/work/work-classic-2"
+                    }
+                ]
+            },
+            {
+                "name": "List",
+                "dropdownMenu": [
+                    {
+                        "name": "Work List 1",
+                        "href": "/work/work-list-1"
+                    },
+                    {
+                        "name": "Work List 2",
+                        "href": "/work/work-list-2"
+                    }
+                ]
+            },
+            {
+                "name": "Metro",
+                "dropdownMenu": [
+                    {
+                        "name": "Work Metro 1",
+                        "href": "/work/work-metro-1"
+                    },
+                    {
+                        "name": "Work Metro 2",
+                        "href": "/work/work-metro-2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Works",
+        "dropdownMenu": [
+            {
+                "name": "VISIONAID",
+                "href": "/portfolio/style-1/visionaid"
+            },
+            {
+                "name": "MEN FASHION",
+                "href": "/portfolio/style-2/men-fashion"
+            },
+            {
+                "name": "AUDU RS",
+                "href": "/portfolio/style-3/audu-rs"
+            },
+            {
+                "name": "OPEN RUN",
+                "href": "/portfolio/style-4/open-run"
+            },
+            {
+                "name": "DOG CHOW",
+                "href": "/portfolio/style-5/dog-chow"
+            },
+            {
+                "name": "HEADPHONES",
+                "href": "/portfolio/style-6/headphones"
+            }
+        ]
+    },
+    {
+        "name": "Services",
+        "href": "/service"
+    },
+    {
+        "name": "Stories",
+        "dropdownMenu": [
+            {
+                "name": "Stories",
+                "href": "/blog/stories"
+            },
+            {
+                "name": "Single Post",
+                "href": "/blog/wildlife-could-be-amazing-see-why"
+            }
+        ]
+    },
+    {
+        "name": "About",
+        "href": "/about-us"
+    },
+    {
+        "name": "Contact",
+        "href": "/contact"
+    }
+]

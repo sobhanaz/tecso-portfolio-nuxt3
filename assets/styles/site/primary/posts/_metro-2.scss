@@ -1,0 +1,54 @@
+.dsn-item-post {
+  display: flex;
+  align-items: center;
+
+  .post-description-info,
+  .entry-date,
+  .separator-between {
+    display: none;
+  }
+
+  .box-content,
+  .box-image-link {
+    width: 100%;
+  }
+
+  .box-image-link {
+    position: relative;
+    z-index: 1;
+    order: 2;
+    margin-left: 15px;
+
+    .box-image-bg {
+      height: 100%;
+    }
+  }
+
+  .post-content {
+    position: relative;
+    z-index: 2;
+    order: 1;
+    writing-mode: vertical-lr;
+    transform: rotate(540deg);
+  }
+
+  @include media_991(min) {
+    min-height: 550px;
+    &:nth-of-type(odd) {
+      .box-image-bg {
+        height: 350px;
+      }
+    }
+    &:nth-of-type(even) {
+      .box-image-bg {
+        height: 550px;
+      }
+    }
+  }
+
+  @include media_991() {
+    & .box-image-link .box-image-bg {
+      height: 350px;
+    }
+  }
+}

@@ -1,0 +1,198 @@
+[
+    {
+        "subtitle": "I'M",
+        "name": "john doe",
+        "job": [
+            "Designer",
+            "Freelancer",
+            "Developer"
+        ],
+        "about": [
+            "Architect & Spatial Planner",
+            "“Architecture is the learned game, correct and magnificent, of forms assembled in the light.”",
+            "In my work, I try to find the right balance between form and function. From technical drawings, all the way to the photographic renders, and the actual representations of my work as a designer, my philosophy is that of simplicity."
+        ],
+        "emails": [
+            "info@dsngrid.com"
+        ],
+        "phone": [
+            "+123456789"
+        ],
+        "location": [
+            "New York, USA"
+        ],
+        "social": [
+            {
+                "name": "Facebook",
+                "link": "",
+                "type": "fab",
+                "iconName": "facebook-f"
+            },
+            {
+                "name": "Twitter",
+                "link": "",
+                "type": "fab",
+                "iconName": "twitter"
+            },
+            {
+                "name": "Linkedin",
+                "link": "",
+                "type": "fab",
+                "iconName": "linkedin-in"
+            },
+            {
+                "name": "Instagram",
+                "link": "",
+                "type": "fab",
+                "iconName": "instagram"
+            }
+        ],
+        "images": [
+            {
+                "src": "images/head-personal.jpg",
+                "name": "john doe"
+            },
+            {
+                "src": "images/p-1.jpg",
+                "name": "john doe"
+            }
+        ],
+        "video": [
+            {
+                "src": "https://vimeo.com/175353205"
+            }
+        ],
+        "skills": [
+            {
+                "skill": "UI Design",
+                "Percentage": 80
+            },
+            {
+                "skill": "UX Design",
+                "Percentage": 75
+            },
+            {
+                "skill": "Product Design",
+                "Percentage": 70
+            }
+        ],
+        "experience": [
+            {
+                "company": "Google",
+                "time": "SeniorProduct Designer (Jan 2021 - Present)",
+                "description": "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+            },
+            {
+                "company": "Webflow",
+                "time": "Lead UI Designer (June 2019 - Dec 2020)",
+                "description": "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+            },
+            {
+                "company": "Figma",
+                "time": "Lead UI Designer (March 2016 - May 2019)",
+                "description": "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+            }
+        ]
+    },
+    {
+        "subtitle": "Welcome !",
+        "name": "Masum Billah.",
+        "job": [
+            "Designer",
+            "Freelancer",
+            "Developer"
+        ],
+        "about": [
+            "I make the complex simple.",
+            "My name is Masum Billah. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
+            "In my work, I try to find the right balance between form and function. From technical drawings, all the way to the photographic renders, and the actual representations of my work as a designer, my philosophy is that of simplicity."
+        ],
+        "emails": [
+            "info@dsngrid.com"
+        ],
+        "phone": [
+            "+123456789"
+        ],
+        "location": [
+            "New York, USA"
+        ],
+        "social": [
+            {
+                "name": "Facebook",
+                "link": "",
+                "type": "fab",
+                "iconName": "facebook-square"
+            },
+            {
+                "name": "Twitter",
+                "link": "",
+                "type": "fab",
+                "iconName": "twitter"
+            },
+            {
+                "name": "Instagram",
+                "link": "",
+                "type": "fab",
+                "iconName": "youtube"
+            }
+        ],
+        "images": [
+            {
+                "src": "images/personal.jpg",
+                "name": "Masum Billah"
+            },
+            {
+                "src": "images/p1.jpg",
+                "name": "Masum Billah"
+            },
+            {
+                "src": "images/p2.jpg",
+                "name": "Masum Billah"
+            }
+        ],
+        "video": [
+            {
+                "src": "https://vimeo.com/175353205"
+            }
+        ],
+        "skills": [
+            {
+                "skill": "UI Design",
+                "Percentage": 98
+            },
+            {
+                "skill": "UX Design",
+                "Percentage": 95
+            },
+            {
+                "skill": "Product Design",
+                "Percentage": 85
+            },
+            {
+                "skill": "Design Thinking",
+                "Percentage": 80
+            },
+            {
+                "skill": "User Research",
+                "Percentage": 60
+            }
+        ],
+        "experience": [
+            {
+                "company": "Google",
+                "time": "SeniorProduct Designer (Jan 2021 - Present)",
+                "description": "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+            },
+            {
+                "company": "Webflow",
+                "time": "Lead UI Designer (June 2019 - Dec 2020)",
+                "description": "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+            },
+            {
+                "company": "Figma",
+                "time": "Lead UI Designer (March 2016 - May 2019)",
+                "description": "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+            }
+        ]
+    }
+]

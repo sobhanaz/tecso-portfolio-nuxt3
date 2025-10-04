@@ -1,0 +1,40 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.33",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@googlemaps/js-api-loader": "^1.16.6",
+    "@nuxtjs/device": "^3.1.1",
+    "core-js": "^3.36.0",
+    "flickr-justified-gallery": "^2.2.0",
+    "fullpage.js": "^4.0.20",
+    "gsap": "^3.12.5",
+    "isotope-layout": "^3.0.6",
+    "nuxt": "^3.10.3",
+    "nuxt-swiper": "^1.2.2",
+    "sass-loader": "^14.1.1",
+    "smooth-scrollbar": "^8.8.4",
+    "splitting": "^1.0.6",
+    "swiper": "^11.0.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@vue/compiler-sfc": "^3.4.21",
+    "sass": "^1.71.1"
+  }
+}

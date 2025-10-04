@@ -1,0 +1,35 @@
+.list-with-number {
+  counter-reset: workcounter;
+
+  .number-item {
+    position: relative;
+
+    &:before {
+      counter-increment: workcounter;
+      content: counters(workcounter, ".", decimal-leading-zero);
+      position: absolute;
+      line-height: initial;
+    }
+  }
+}
+
+ul.dsn-list {
+  list-style: none;
+  --dsn-icon-size: 13px;
+  .list-item {
+    display: flex;
+    align-items: center;
+
+    &.background-main,
+    .background-section,
+    .background-theme {
+      padding: 8px 20px;
+    }
+  }
+}
+
+@import "dsn-block/dsn-grid";
+@import "dsn-block/background-inherit";
+@import "dsn-block/service";
+@import "dsn-block/grid-masonry";
+@import "dsn-block/move-section";

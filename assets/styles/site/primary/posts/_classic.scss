@@ -1,0 +1,19 @@
+.box-content {
+  flex-direction: column;
+  border-style: $heading-color;
+  .post-meta {
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  .box-image-link + .post-content {
+    padding-top: 20px;
+  }
+
+  .box-image-bg {
+    position: relative;
+    overflow: hidden;
+    max-height: 80vh;
+  }
+}

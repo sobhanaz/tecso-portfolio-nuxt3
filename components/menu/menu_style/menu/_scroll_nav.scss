@@ -1,0 +1,12 @@
+&.nav-bg {
+  background-color: $bg-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include dsnSetMedia(max, 600) {
+    top: 0;
+  }
+}
+
+&.hide-nav:not(.dsn-open) {
+  transform: translateY(-100%);
+}

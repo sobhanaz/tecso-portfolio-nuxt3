@@ -1,0 +1,21 @@
+@include media_991(min) {
+  .half-right &, .half-left & {
+    .bg-container, .dsn-slider-content {
+      width: 50%;
+    }
+  }
+
+  .half-right.dsn-section-padding & .dsn-slider-content {
+    padding-left: 0;
+  }
+  .half-left.dsn-section-padding & .dsn-slider-content {
+    padding-right: 0;
+  }
+  .half-right & .bg-container {
+    right: 0;
+  }
+  .half-left & .dsn-slider-content{
+    left: 50%;
+  }
+
+}

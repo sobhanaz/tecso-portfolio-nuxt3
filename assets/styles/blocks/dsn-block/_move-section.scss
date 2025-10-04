@@ -1,0 +1,16 @@
+.section-move-image {
+	@include media_991(min) {
+		--dsn-width-item: 3;
+		--dsn-col-item: 60px;
+		--dsn-row-item: 50px;
+	}
+
+	@include media_991() {
+		--dsn-width-item: 2.5;
+		--dsn-col-item: 30px;
+		--dsn-row-item: 50px;
+	}
+	@include media_768() {
+		--dsn-width-item: 1.5;
+	}
+}

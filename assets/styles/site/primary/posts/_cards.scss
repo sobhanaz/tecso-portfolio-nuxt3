@@ -1,0 +1,16 @@
+&:not(.box-image-blackdsn) .post-content {
+  position: absolute;
+  padding: 50px 30px;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  .post-meta {
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.box-image-link {
+  width: 100%;
+}

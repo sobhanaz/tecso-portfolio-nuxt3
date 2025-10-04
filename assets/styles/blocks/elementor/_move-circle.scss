@@ -1,0 +1,61 @@
+.move-circle {
+	&:not(.p-absolute) {
+		position: relative;
+	}
+
+	@include media_991(min) {
+		background-color: transparent;
+		border-color: transparent !important;
+	}
+
+	.icon-circle {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: inherit;
+		z-index: -1;
+		border: inherit;
+	}
+
+	&.background-main .icon-circle {
+		background-color: $bg-color;
+	}
+
+	&.background-section .icon-circle {
+		background-color: $assistant-color;
+	}
+
+	&.background-theme .icon-circle {
+		background-color: $theme-color;
+	}
+
+	&.border-color-default .icon-circle {
+		border-color: $border-color;
+	}
+
+	&.border-color-main .icon-circle {
+		border-color: $bg-color;
+	}
+
+	&.border-color-assistant .icon-circle {
+		border-color: $assistant-color;
+	}
+
+	&.border-color-theme-color .icon-circle {
+		border-color: $theme-color;
+	}
+
+	&.border-color-heading .icon-circle {
+		border-color: $heading-color;
+	}
+
+	&.border-color-body .icon-circle {
+		border-color: $body-color;
+	}
+
+	&.border-circle {
+		border: 1px solid $heading-color;
+	}
+}

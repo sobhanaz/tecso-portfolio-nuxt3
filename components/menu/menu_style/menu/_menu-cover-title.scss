@@ -1,0 +1,22 @@
+.menu-cover-title {
+  position: absolute;
+  top: 50%;
+  font-size: 20vw;
+  font-weight: 600;
+  line-height: 1.15;
+  transform: translateY(-50%) rotateX(75deg);
+  opacity: 0;
+  padding-left: inherit;
+  transition: 0.5s $easeInOutBack;
+  transition-property: opacity, transform;
+  pointer-events: none;
+
+  @include media_991(min) {
+    left: -15px;
+  }
+  @include media_991() {
+    left: 0;
+    padding-right: inherit;
+    width: 100%;
+  }
+}

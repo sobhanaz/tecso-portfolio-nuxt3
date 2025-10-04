@@ -1,0 +1,129 @@
+/* -------------------------------------------------------
+                   Header
+-------------------------------------------------------- */
+
+#dsn_header {
+  position: relative;
+  overflow: hidden;
+
+  --margin-padding: 80px;
+
+  &:not(.header-normal, .header-padding, .dsn-full-header) {
+    min-height: 100vh;
+
+    #hero_content {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @include media_768(min) {
+      .entry-header,
+      #hero_content {
+        min-height: calc(100vh - (#{$margin-padding} * 2));
+      }
+    }
+
+    @include media_768 {
+      padding: 0;
+      .entry-header,
+      #hero_content {
+        min-height: 100vh;
+      }
+    }
+  }
+
+  &.show-box-shadow:not(.header-normal) {
+    & .entry-header:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &:not(.header-normal):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+
+    left: 0;
+    top: 50%;
+    height: 50%;
+    background-color: $assistant-color;
+  }
+
+  .entry-header:after {
+    left: 0;
+    bottom: 0;
+    box-shadow: 1px 0 31px 45px var(--assistant-color);
+    z-index: 1;
+  }
+
+  &.header-padding:not(.header-normal) {
+    .entry-header {
+      padding: 120px 0;
+    }
+  }
+
+  @include media_991(min) {
+    &.right-img,
+    &.left-img {
+      #hero_image,
+      #hero_content {
+        width: 50%;
+      }
+
+      &.right-img {
+        #hero_image {
+          left: 50%;
+        }
+
+        #hero_content {
+          margin-left: 0;
+        }
+      }
+
+      &.left-img {
+        #hero_content {
+          margin-right: 0;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  #hero_image {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &:before {
+      z-index: 2;
+    }
+  }
+
+  #hero_content {
+    z-index: 2;
+  }
+
+  &.header-normal {
+    padding-top: 180px;
+    @include media_768(min) {
+      .title:not(.title-org) {
+        --title-heading: 60px;
+      }
+    }
+  }
+
+  &.dsn-full-header {
+    padding: 0;
+
+    .entry-header,
+    #hero_content {
+      min-height: 100vh;
+    }
+
+    #hero_content {
+      padding-top: $margin-padding;
+      padding-bottom: $margin-padding;
+    }
+  }
+}

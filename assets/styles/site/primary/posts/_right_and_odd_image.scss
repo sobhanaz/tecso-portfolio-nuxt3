@@ -1,0 +1,43 @@
+.dsn-style-list.dsn-image-odd & .box-image-link .box-image-bg {
+  height: 70vh;
+}
+
+.dsn-style-list & .box-content {
+  @include media_991(min) {
+    grid-column-gap: 0 !important;
+
+    .post-content {
+      align-self: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+.dsn-style-list.dsn-image-right & .box-image-link,
+.dsn-style-list.dsn-image-odd & .dsn-item-post:nth-child(even) .box-image-link {
+  order: 2;
+}
+
+@include media_991(min) {
+  .dsn-style-list.dsn-image-odd & .dsn-item-post:nth-child(even) {
+    .box-image-link {
+      order: 2;
+    }
+    .post-content {
+      justify-self: end;
+    }
+  }
+}
+
+@include media_991() {
+  .dsn-style-list.dsn-image-odd & .dsn-item-post .box-image-link {
+    order: 0 !important;
+  }
+  .dsn-style-list.dsn-image-odd & .dsn-item-post {
+    margin-top: 80px;
+    .box-content .post-content {
+      padding-left: 30px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Team Members",
+        "number": "200",
+        "mark": "+",
+        "description": "A diverse and global community of independent thinkers make up our inclusive workplace."
+    },{
+        "id": 2,
+        "name": "Portfolio Managers",
+        "number": "60",
+        "mark": "+",
+        "description": "A diverse and global community of independent thinkers make up our inclusive workplace."
+    },{
+        "id": 3,
+        "name": "Offices",
+        "number": "10",
+        "mark": "+",
+        "description": "A diverse and global community of independent thinkers make up our inclusive workplace."
+    }
+]

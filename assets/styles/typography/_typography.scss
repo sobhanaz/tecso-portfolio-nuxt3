@@ -1,0 +1,12 @@
+button,
+input,
+select,
+optgroup,
+textarea {
+  text-rendering: optimizeLegibility;
+}
+
+@import "fonts";
+@import "headings";
+@import "borders-title";
+@import "copy";

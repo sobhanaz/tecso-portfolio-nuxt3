@@ -1,0 +1,44 @@
+.dsn-background-inherit,
+.dsn-def-btn {
+  &,
+  .background-main,
+  .background-section,
+  .background-theme {
+    background-color: transparent;
+  }
+
+  .background-main,
+  &.background-main {
+    .dsn-bg,
+    .dsn-bg-after:after,
+    .dsn-bg-before:before {
+      background-color: $bg-color;
+    }
+  }
+
+  .background-section,
+  &.background-section {
+    .dsn-bg,
+    .dsn-bg-after:after,
+    .dsn-bg-before:before {
+      background-color: $assistant-color;
+    }
+  }
+
+  .background-theme,
+  &.background-theme {
+    .dsn-bg,
+    .dsn-bg-after:after,
+    .dsn-bg-before:before {
+      background-color: $theme-color;
+    }
+  }
+}
+
+.background-revere {
+  background-color: $assistant-color;
+
+  .background-section & {
+    background-color: $bg-color;
+  }
+}

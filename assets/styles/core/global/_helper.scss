@@ -1,0 +1,127 @@
+@include MarginPadding(20, 5, ".p", padding);
+
+.over-hidden {
+	overflow: hidden;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+//---> Middle Element
+.v-middle {
+	@include middle;
+}
+
+.clear {
+	clear: both;
+
+	&:after,
+	&:before {
+		content: "";
+		display: table;
+		table-layout: fixed;
+	}
+}
+
+.max-w570 {
+	max-width: 570px;
+}
+.max-w470 {
+	max-width: 470px;
+}
+
+.max-w750 {
+	max-width: 750px;
+}
+
+.max-w350 {
+	max-width: 350px;
+}
+
+.max-w570,
+.max-w470,
+.max-w750 {
+	.text-center & {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.cover-bg-img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+}
+
+.box-padding {
+	padding: var(--box-padding);
+	&.box-left {
+		padding-left: 0;
+	}
+}
+
+.letter-stroke {
+	color: transparent;
+	-webkit-text-stroke: 1px $heading-color;
+}
+
+.before-z-index:before {
+	z-index: 2;
+}
+
+.border-left {
+	border-left: 1px solid $border-color;
+}
+
+.border-right {
+	border-right: 1px solid $border-color;
+}
+
+.border-top {
+	border-top: 1px solid $border-color;
+}
+
+.border-bottom {
+	border-bottom: 1px solid $border-color;
+}
+
+.border-color-main {
+	border-color: $bg-color;
+}
+
+.border-color-assistant {
+	border-color: $assistant-color;
+}
+
+.border-color-theme-color {
+	border-color: $theme-color;
+}
+
+.border-color-heading {
+	border-color: $heading-color;
+}
+
+.border-color-body {
+	border-color: $body-color;
+}
+
+.dsn-video {
+	-o-object-fit: cover;
+	object-fit: cover;
+	z-index: -20 !important;
+	width: 100%;
+	height: 100%;
+}
+
+[data-dsn="video"] {
+	width: 100%;
+	height: 100%;
+}

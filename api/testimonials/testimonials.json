@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "MTL Graphic",
+        "job": "Graphic Design",
+        "string": [
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts.",
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts. Also, they provide quick support. Thank you so much for a beautiful theme."
+        ],
+        "imageSrc": "images/team/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jeremy Smith",
+        "job": "Creative Studio Head",
+        "string": [
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts.",
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts. Also, they provide quick support. Thank you so much for a beautiful theme."
+        ],
+        "imageSrc": "images/team/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Angelo Walking",
+        "job": "Developer Lead",
+        "string": [
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts.",
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts. Also, they provide quick support. Thank you so much for a beautiful theme."
+        ],
+        "imageSrc": "images/team/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Bill Gardner",
+        "job": "Web designer",
+        "string": [
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts.",
+            "This theme is awesome and the designer is very helpful. I had a few questions purchase. He/She helped me with all the doubts. Also, they provide quick support. Thank you so much for a beautiful theme."
+        ],
+        "imageSrc": "images/team/4.jpg"
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "name": "Hisham Megahed",
+        "job": "Web Designer",
+        "imageSrc": "images/team/3.jpg",
+        "social": [
+            {
+                "name": "Facebook",
+                "link": "",
+                "type": "fab",
+                "iconName": "facebook-f"
+            },
+            {
+                "name": "Instagram",
+                "link": "",
+                "type": "fab",
+                "iconName": "instagram"
+            },
+            {
+                "name": "Linkedin",
+                "link": "",
+                "type": "fab",
+                "iconName": "linkedin-in"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Mostafa Sabry",
+        "job": "Founder",
+        "imageSrc": "images/team/2.jpg",
+        "social": [
+            {
+                "name": "Facebook",
+                "link": "",
+                "type": "fab",
+                "iconName": "facebook-f"
+            },
+            {
+                "name": "Instagram",
+                "link": "",
+                "type": "fab",
+                "iconName": "instagram"
+            },
+            {
+                "name": "Linkedin",
+                "link": "",
+                "type": "fab",
+                "iconName": "linkedin-in"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Ahmed Shawky",
+        "job": "Engineer",
+        "imageSrc": "images/team/1.jpg",
+        "social": [
+            {
+                "name": "Facebook",
+                "link": "",
+                "type": "fab",
+                "iconName": "facebook-f"
+            },
+            {
+                "name": "Instagram",
+                "link": "",
+                "type": "fab",
+                "iconName": "instagram"
+            },
+            {
+                "name": "Linkedin",
+                "link": "",
+                "type": "fab",
+                "iconName": "linkedin-in"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Blake Hamilton",
+        "job": "Engineer",
+        "imageSrc": "images/p-1.jpg",
+        "social": [
+            {
+                "name": "Facebook",
+                "link": "",
+                "type": "fab",
+                "iconName": "facebook-f"
+            },
+            {
+                "name": "Instagram",
+                "link": "",
+                "type": "fab",
+                "iconName": "instagram"
+            },
+            {
+                "name": "Linkedin",
+                "link": "",
+                "type": "fab",
+                "iconName": "linkedin-in"
+            }
+        ]
+    }
+]

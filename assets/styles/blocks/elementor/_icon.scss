@@ -1,0 +1,45 @@
+.dsn-icon {
+	i {
+		font-size: var(--dsn-icon-size, 20px);
+		color: var(--dsn-color-icon, $theme-color);
+	}
+
+	svg,
+	img {
+		width: var(--dsn-icon-size, 20px);
+		height: var(--dsn-icon-size, 20px);
+
+		&,
+		path {
+			fill: var(--dsn-color-icon, $theme-color);
+		}
+	}
+
+	.text-center & {
+		margin: 0 auto;
+	}
+}
+
+.dsn-icon-theme-color {
+	--dsn-color-icon: #{$theme-color};
+}
+
+.dsn-icon-heading-color {
+	--dsn-color-icon: #{$heading-color};
+}
+
+.dsn-icon-body-color {
+	--dsn-color-icon: #{$body-color};
+}
+
+.dsn-icon-border-color {
+	--dsn-color-icon: #{$border-color};
+}
+
+.dsn-icon-assistant-color {
+	--dsn-color-icon: #{$assistant-color};
+}
+
+.dsn-icon-main-color {
+	--dsn-color-icon: #{$bg-color};
+}

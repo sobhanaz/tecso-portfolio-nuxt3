@@ -1,0 +1,29 @@
+.box-content {
+  border-style: $heading-color;
+
+  .box-image-link {
+    position: relative;
+  }
+
+  @include media_991(min) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+
+    .post-content {
+      align-self: center;
+      .post-meta {
+        a {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  @include media_991() {
+    flex-direction: column;
+    .box-image-link + .post-content {
+      padding-top: 30px;
+    }
+  }
+}

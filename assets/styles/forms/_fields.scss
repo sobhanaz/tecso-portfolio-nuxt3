@@ -1,0 +1,110 @@
+input,
+textarea,
+.form-control,
+.form-box input,
+.form-box textarea {
+	&::-webkit-input-placeholder {
+		color: $body-color;
+	}
+	&::-moz-placeholder {
+		color: $body-color;
+	}
+	&:-ms-input-placeholder {
+		color: $body-color;
+	}
+	&::-ms-input-placeholder {
+		color: $body-color;
+	}
+	&::placeholder {
+		color: $body-color;
+	}
+}
+
+input[type="search"] {
+	&::-webkit-search-decoration {
+		display: none;
+	}
+}
+
+fieldset {
+	padding: 30px;
+
+	form {
+		& > * {
+			margin-bottom: 30px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		p {
+			margin-top: 0;
+		}
+
+		textarea,
+		input {
+			margin-bottom: 0;
+			padding: 10px;
+		}
+	}
+}
+
+.dsn-no-results .dsn-search .search-form input {
+	min-width: 460px;
+}
+
+.entry-form {
+	label {
+		font-weight: 600;
+		font-family: $heading-font;
+		padding-bottom: 10px;
+		display: block;
+	}
+	input,
+	textarea {
+		font-family: $heading-font;
+		font-size: 14px;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid $border-color;
+		color: $heading-color;
+		padding: 10px;
+		letter-spacing: 2px;
+		background-color: $assistant-color;
+
+		&::-webkit-input-placeholder {
+			color: $heading-color;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+
+		&::-moz-placeholder {
+			color: $heading-color;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+
+		&:-ms-input-placeholder {
+			color: $heading-color;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+
+		&::-ms-input-placeholder {
+			color: $heading-color;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+
+		&::placeholder {
+			color: $heading-color;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+	}
+
+	textarea {
+		min-height: 80px;
+	}
+}

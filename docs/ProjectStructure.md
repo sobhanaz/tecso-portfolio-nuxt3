@@ -1,0 +1,131 @@
+## Project Structure (Full)
+
+This is the current repository tree (top-level and key folders/files):
+
+```
+app.vue
+error.vue
+nuxt.config.ts
+package.json
+README.md
+tsconfig.json
+api/
+  about/
+    about-according.json
+  award/
+    awarded-list.json
+  blog/
+    blog.json
+  box-info/
+    box-info.json
+  brands/
+    brand-one.json
+    brand.json
+  menu/
+    menu.json
+  personal/
+    personal.json
+  portfolio/
+    portfolio.json
+  services/
+    about-services.json
+    service-icon.json
+    service.json
+    services_accordion.json
+    ServicesFour.json
+  team/
+    team.json
+  testimonials/
+    testimonials.json
+assets/
+  fonts/
+  images/
+    displacement/
+    for-styles/
+  styles/
+    _core.scss
+    _normalize.scss
+    global.scss
+    style.scss
+    blocks/
+    core/
+    forms/
+    media/
+    mixins/
+    navigation/
+    site/
+    typography/
+    variables-site/
+components/
+  about/
+  accordion/
+  awarded/
+  blog/
+  box-image/
+  box-info/
+  brand/
+  contact/
+  experience/
+  footer/
+  header/
+  helper/
+  images/
+  layout/
+  links/
+  logo/
+  menu/
+  meta/
+  next/
+  option-theme/
+  portfolio/
+  section-video/
+  sections/
+  services/
+  skills/
+  social/
+  string/
+  svg/
+  swiper-pagination/
+  team/
+  testimonials/
+  title/
+  z-main-page/
+hooks/
+  plugin.js
+  pluginanimations.js
+  spltting.js
+layouts/
+  default.vue
+  view.vue
+pages/
+  about-us.vue
+  architecture.vue
+  business.vue
+  contact.vue
+  index.vue
+  main-demo.vue
+  metro-portfolio-1.vue
+  metro-portfolio-2.vue
+  personal.vue
+  photographer.vue
+  resume.vue
+  service.vue
+  blog/
+  carousel/
+  portfolio/
+  slider/
+  work/
+plugins/
+  fontawesome.js
+  isotope.client.js
+  splitting.client.js
+public/
+  images/
+  js/
+server/
+  tsconfig.json
+store/
+  store.js
+```
+
+Refer back to README for explanations and pointers to key files.

@@ -1,0 +1,115 @@
+.dsn-form {
+  .d-flex-form {
+    @include media_768(min) {
+      .form-group:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    @include media_768() {
+      flex-direction: column;
+    }
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 30px;
+
+    label {
+      font-weight: 600;
+      color: $heading-color;
+    }
+  }
+
+  .entry-box {
+    .wpcf7-form-control-wrap {
+      width: 100%;
+    }
+
+    textarea,
+    input:not([type="submit"]) {
+      font-size: 15px;
+      font-weight: 400;
+      width: 100%;
+      border: 1px solid $border-color;
+      padding: 10px 18px;
+      color: $heading-color;
+      margin-bottom: 0;
+      background-color: transparent;
+    }
+
+    textarea {
+      min-height: 50px;
+    }
+  }
+
+  .dsn-btn {
+    padding: 0;
+    border: 1px solid $theme-color;
+  }
+
+  .dsn-def-btn {
+    .dsn-btn {
+      border-radius: 7px;
+    }
+
+    > .w-auto {
+      justify-content: center;
+    }
+  }
+
+  input[type="submit"] {
+    position: relative;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $heading-color;
+    padding: 20px 30px;
+    cursor: pointer;
+    z-index: 9;
+    min-width: 150px;
+  }
+
+  .ajax-loader {
+    position: absolute;
+    right: 3px;
+  }
+
+  .wpcf7-not-valid-tip {
+    margin-top: 20px;
+  }
+
+  .wpcf7 form.invalid .wpcf7-response-output,
+  .wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: $border-color;
+  }
+
+  .dsn-def-btn .icon-circle {
+    display: inherit;
+  }
+}
+
+form:not(.submitting) .wpcf7-spinner {
+  width: 0;
+  padding: 0;
+  margin: 0;
+  transform: scale(0);
+}
+
+.contact-form {
+  @include media_991() {
+    .grid-1-half {
+      grid-template-columns: 1fr;
+    }
+    .dsn-mask {
+      display: none;
+    }
+  }
+  @include media_768X991() {
+    .d-grid.dsn-service {
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+    }
+  }
+}

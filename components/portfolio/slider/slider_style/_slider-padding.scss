@@ -1,0 +1,16 @@
+.dsn-section-padding & {
+  @include media_768(min){
+    padding: 90px var(--dsn-gap-container);
+  }
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    background-color: var(--assistant-color);
+  }
+}

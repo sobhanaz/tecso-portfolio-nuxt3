@@ -1,0 +1,42 @@
+.section_description,
+.dsn-link {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.post-meta,
+.section_description,
+.dsn-link {
+  transition: 0.3s linear;
+  opacity: 0;
+  visibility: hidden;
+
+  &.post-meta {
+    transform: translateY(-15px);
+  }
+}
+
+.dsn-item-post:hover {
+  .post-meta,
+  .post-title,
+  .section_description,
+  .dsn-link {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .section_description {
+    transition-delay: 0.1s;
+  }
+  .dsn-link {
+    transition-delay: 0.1s;
+  }
+  .section_description + .dsn-link {
+    transition-delay: 0.15s;
+  }
+}
+
+.post-content {
+  width: 100%;
+}

@@ -1,0 +1,44 @@
+#dsn-scrollbar,
+.dsn-work-scrollbar,
+.contact-modal {
+	overflow: hidden;
+	height: 100vh;
+
+	.scrollbar-track {
+		background: none;
+		width: 4px;
+		mix-blend-mode: exclusion;
+		z-index: 99999;
+
+		.scrollbar-thumb {
+			background: #fff;
+			width: $smooth-width;
+		}
+	}
+}
+
+.admin-bar.dsn-effect-scroll:not(.dsn-mobile) {
+	@include media_991(min) {
+		#main_content:after {
+			content: "";
+			display: block;
+			height: 0.1px;
+		}
+	}
+}
+
+.admin-bar.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar,
+.dsn-work-scrollbar,
+.contact-modal {
+	$narrow-offset: 46px;
+	$wide-offset: 32px;
+	height: calc(100vh - #{$narrow-offset});
+
+	@media screen and (min-width: 783px) {
+		height: calc(100vh - #{$wide-offset});
+	}
+}
+
+.locked-scroll #dsn-scrollbar {
+	background-color: $bg-color;
+}

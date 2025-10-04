@@ -1,0 +1,80 @@
+.dsn-service {
+	.service_title {
+		text-transform: uppercase;
+	}
+
+	.service-item-inner {
+		&.border-style:not(.p-20),
+		&.background-theme,
+		&.background-main,
+		&.background-section {
+			padding: 60px 30px;
+		}
+	}
+
+	.number-item:before {
+		right: 45px;
+		top: 50px;
+		font-size: 7vw;
+		line-height: 1;
+		font-family: $heading-font;
+		font-weight: 700;
+		color: transparent;
+		-webkit-text-stroke: 1.5px $border-color;
+		opacity: 0.2;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	.service-item {
+		@include media_768(min) {
+			&.border-left {
+				padding-left: 50px;
+			}
+		}
+		@include media_768() {
+			&.border-left {
+				border-width: 0;
+			}
+		}
+
+		&.border-bottom {
+			padding-bottom: 40px;
+		}
+		> .border-bottom {
+			padding-bottom: 40px;
+		}
+		ul {
+			list-style: none;
+			line-height: 1.3;
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
+
+		.service-item-inner {
+			.icon-left &,
+			.icon-right & {
+				display: flex;
+
+				.dsn-icon:not(.dsn-bg-before) {
+					flex-shrink: 0;
+				}
+			}
+
+			.icon-left & .dsn-icon:not(.dsn-bg-before) {
+				margin-right: 20px;
+			}
+
+			.icon-top & .dsn-icon:not(.dsn-bg-before) {
+				padding-bottom: 20px;
+			}
+
+			.icon-right & .dsn-icon:not(.dsn-bg-before) {
+				order: 2;
+				margin-left: 20px;
+			}
+		}
+	}
+}

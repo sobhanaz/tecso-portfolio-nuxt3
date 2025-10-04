@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "imageSrc": "images/brand/1.svg"
+    },
+    {
+        "id": 2,
+        "imageSrc": "images/brand/2.svg"
+    },
+    {
+        "id": 3,
+        "imageSrc": "images/brand/3.svg"
+    },
+    {
+        "id": 4,
+        "imageSrc": "images/brand/4.svg"
+    },
+    {
+        "id": 5,
+        "imageSrc": "images/brand/5.svg"
+    },
+    {
+        "id": 6,
+        "imageSrc": "images/brand/6.svg"
+    },
+    {
+        "id": 7,
+        "imageSrc": "images/brand/1.svg"
+    },
+    {
+        "id": 8,
+        "imageSrc": "images/brand/4.svg"
+    }
+]

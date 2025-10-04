@@ -1,0 +1,13 @@
+.dsn-isotope {
+	@include media_768(min) {
+		&.dsn-masonry-grid .grid-item:nth-of-type(2) {
+			margin-top: calc(80px + var(--dsn-col-item, 0px));
+		}
+	}
+
+	@include media_991(min) {
+		&.dsn-masonry-grid.dsn-masonry-grid-2 .grid-item:nth-of-type(3) {
+			margin-top: calc(120px + var(--dsn-col-item, 0px));
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.dsn-grid-masonry {
+	.box-item {
+		transition: transform 0.3s;
+		&:hover {
+			transform: translateY(-3px);
+		}
+
+		&,
+		.img-box-parallax {
+			position: relative;
+		}
+
+		.img-box-parallax .cap {
+			bottom: 2px;
+		}
+	}
+
+	.dsn-title {
+		margin-top: 15px;
+	}
+
+	.box-grid-number & {
+		counter-reset: workcounter;
+
+		.box-item .dsn-title span:before {
+			counter-increment: workcounter;
+			content: counters(workcounter, ".", decimal-leading-zero);
+			position: relative;
+			display: inline-block;
+			padding: 5px;
+			background-color: $theme-color;
+			color: $bg-color;
+			font-size: 14px;
+			font-weight: 400;
+			border-radius: 5px;
+			margin-right: 10px;
+		}
+	}
+}
