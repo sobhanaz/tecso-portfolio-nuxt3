@@ -52,9 +52,6 @@ export default defineNuxtConfig({
 		"/portfolio/**": { prerender: false },
 		"/slider/**": { prerender: false },
 		"/carousel/**": { prerender: false },
-		"": { prerender: false },
-		"": { prerender: false },
-		"": { prerender: false },
 
 	},
 	ssr: true,

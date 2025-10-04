@@ -20,7 +20,7 @@ onMounted(() => {
         <BlackMenu hamburger />
         <div class="vh-100">
             <h1 class="mb-10">{{ error.statusCode }}</h1>
-            <p class="mb-20" v-if="error.message"</p>
+            <p class="mb-20" v-if="error && error.message">{{ error.message }}</p>
             <!-- <p class="mb-20" v-if="error.data.msg">{{ error.data.msg ? error.data.msg : null }}</p> -->
             <h2 class="mb-20">{{ error ? error.message : 'Sorry, this page does not exist' }}</h2>
             <div class="contain-btns">

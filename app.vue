@@ -12,4 +12,4 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { register } from 'swiper/element/bundle';
 gsap.registerPlugin(ScrollTrigger);
 register();
-</Script>
+</script>
